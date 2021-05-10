@@ -1,0 +1,39 @@
+.navbar {
+  height: 10vh;
+  background: $CH-Blue;
+  padding: 0rem 8rem;
+  .navLinks {
+    display: flex;
+    align-items: center;
+    // width: 50%;
+    height: 100%;
+    #logo {
+      padding: 0rem 1rem 0rem 0rem;
+      font-family: Gotham;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 151%;
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      color: #f4ebe8;
+      list-style: none;
+      text-decoration: none;
+    }
+    .navLink {
+      padding: 0rem 2rem;
+      color: $CH-Text;
+      text-decoration: none;
+      list-style: none;
+      font-family: Gotham;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 151%;
+      display: flex;
+      align-items: center;
+      color: #f4ebe8;
+    }
+  }
+}

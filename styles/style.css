@@ -1,0 +1,226 @@
+.navbar {
+  height: 10vh;
+  background: #4765ff;
+  padding: 0rem 8rem;
+}
+
+.navbar .navLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.navbar .navLinks #logo {
+  padding: 0rem 1rem 0rem 0rem;
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 151%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  color: #f4ebe8;
+  list-style: none;
+  text-decoration: none;
+}
+
+.navbar .navLinks .navLink {
+  padding: 0rem 2rem;
+  color: #f4ebe8;
+  text-decoration: none;
+  list-style: none;
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 151%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #f4ebe8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.landing {
+  overflow: hidden;
+}
+
+.landing main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0rem 8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.landing main .header-text .header {
+  width: 693px;
+  height: 246px;
+  left: 146px;
+  top: 206px;
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 170%;
+  /* or 82px */
+  text-transform: uppercase;
+  /* CH-bold text */
+  color: #190933;
+}
+
+.landing main .header-text p {
+  width: 618px;
+  height: 113px;
+  left: 146px;
+  top: 472px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 170%;
+  /* or 34px */
+  text-transform: lowercase;
+  color: #727272;
+}
+
+.landing main .header-text #btn1 {
+  width: 175px;
+  height: 49px;
+  left: 146px;
+  top: 605px;
+  cursor: pointer;
+  background: #4765ff;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+.landing main .header-text #btn1:hover {
+  background: #2b4eff;
+}
+
+.landing main .header-text #btn1 a {
+  width: 92px;
+  height: 27px;
+  left: 187px;
+  top: 616px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 170%;
+  /* or 27px */
+  color: #f4ebe8;
+}
+
+.landing main .header-text #btn2 {
+  width: 175px;
+  height: 49px;
+  left: 351px;
+  top: 605px;
+  margin: 0rem 1rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border: 1px solid #3656f8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: transparent;
+  border-radius: 6px;
+  color: #000;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.landing main .header-text #btn2:hover {
+  background: #4765ff;
+}
+
+.landing main .header-text #btn2:hover a {
+  color: #f4ebe8;
+}
+
+.landing main .header-text a {
+  width: 92px;
+  height: 27px;
+  left: 187px;
+  top: 616px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 170%;
+  /* or 27px */
+  text-decoration: none;
+  color: #000;
+}
+
+.assets {
+  overflow: hidden;
+}
+
+.assets #bars {
+  position: absolute;
+  width: 258px;
+  height: 218px;
+  left: -80px;
+  top: 232px;
+}
+
+.assets #bottom-dots {
+  position: absolute;
+  left: 70px;
+  bottom: -10px;
+}
+
+.assets #text-bg {
+  position: absolute;
+  width: 389px;
+  height: 15px;
+  left: 130px;
+  top: 420px;
+  z-index: -1;
+  background: #a0b0ff;
+}
+
+.assets #top-dots {
+  position: absolute;
+  width: 99px;
+  z-index: -1;
+  height: 245px;
+  right: 0px;
+  top: 19px;
+}
+
+.assets #bottom-triangle {
+  position: absolute;
+  bottom: -100px;
+  z-index: -1;
+  right: 0;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,172 @@
+$CH-Blue: #4765ff;
+$CH-accent: #8b9eff;
+$CH-bold-text: #190933;
+$CH-Success: #2cda00;
+$CH-Warning: #e7dd00;
+$CH-Danger: #df0000;
+$CH-Text: #f4ebe8;
+
+@import '_navbar.scss';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.landing {
+  overflow: hidden;
+  main {
+    display: flex;
+    padding: 0rem 8rem;
+    align-items: center;
+    height: 90vh;
+    overflow: hidden;
+    .header-text {
+      .header {
+        width: 693px;
+        height: 246px;
+        left: 146px;
+        top: 206px;
+
+        font-family: Gotham;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 170%;
+        /* or 82px */
+
+        text-transform: uppercase;
+
+        /* CH-bold text */
+
+        color: $CH-bold-text;
+      }
+      p {
+        // position: absolute;
+        width: 618px;
+        height: 113px;
+        left: 146px;
+        top: 472px;
+
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 170%;
+        /* or 34px */
+
+        text-transform: lowercase;
+
+        color: #727272;
+      }
+      #btn1 {
+        // all: unset;
+        width: 175px;
+        height: 49px;
+        left: 146px;
+        top: 605px;
+        cursor: pointer;
+        background: $CH-Blue;
+        border-radius: 6px;
+        outline: none;
+        border: none;
+        transition: all 0.1s ease-out;
+        &:hover {
+          background: #2b4eff;
+        }
+        a {
+          width: 92px;
+          height: 27px;
+          left: 187px;
+          top: 616px;
+
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 170%;
+          /* or 27px */
+
+          color: $CH-Text;
+        }
+      }
+      #btn2 {
+        width: 175px;
+        height: 49px;
+        left: 351px;
+        top: 605px;
+        margin: 0rem 1rem;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        border: 1px solid #3656f8;
+        box-sizing: border-box;
+        background: transparent;
+        border-radius: 6px;
+        color: #000;
+        transition: all 0.2s ease-out;
+        &:hover {
+          background: $CH-Blue;
+          a {
+            color: $CH-Text;
+          }
+        }
+      }
+
+      a {
+        width: 92px;
+        height: 27px;
+        left: 187px;
+        top: 616px;
+
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 170%;
+        /* or 27px */
+        text-decoration: none;
+        color: #000;
+      }
+    }
+  }
+}
+
+.assets {
+  overflow: hidden;
+  #bars {
+    position: absolute;
+    width: 258px;
+    height: 218px;
+    left: -80px;
+    top: 232px;
+  }
+  #bottom-dots {
+    position: absolute;
+    left: 70px;
+    bottom: -10px;
+  }
+  #text-bg {
+    position: absolute;
+    width: 389px;
+    height: 15px;
+    left: 130px;
+    top: 420px;
+    z-index: -1;
+    background: #a0b0ff;
+  }
+  #top-dots {
+    position: absolute;
+    width: 99px;
+    z-index: -1;
+    height: 245px;
+    right: 0px;
+    top: 19px;
+  }
+  #bottom-triangle {
+    position: absolute;
+    bottom: -100px;
+    z-index: -1;
+    right: 0;
+  }
+}
