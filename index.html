@@ -6,52 +6,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link
+        rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
+
     <title>Coherent Css</title>
 </head>
 
 <body>
-    <nav class="navbar">
-        <ul class="navLinks">
-            <a href="index.html" id="logo">
-                <li>Coherent CSS</li>
-            </a>
-            <a href="index.html" class="navLink">
-                <li>Home</li>
-            </a>
-            <a href="index.html" class="navLink">
-                <li>Docs</li>
-            </a>
+
+    <nav>
+        <div class="logo">
+            <h4>Coherent CSS</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Docs </a></li>
         </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
     </nav>
     <section class="landing">
-
-
         <main>
-            <div class="header-text">
-                <h1 class="header">
-                    Build fast, beautiful looking websites with coherent css
-                </h1>
-
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis est sit
-                    nisi eget aliquam. Risus scelerisque molestie pulvinar malesuada.
-                    Vitae potenti sagittis.
-                </p>
-                <button id="btn1"><a>Get Started</a></button>
-                <button id="btn2"><a href="#">Download Now</a></button>
-            </div>
             <div class="image">
-                <img src="images/image 4.png" alt="builder-img">
+                <img src="images/image 6.png" alt="builder-img">
+            </div>
+            <div class="text-container">
+
+
+                <div class="header-text">
+                    <h1 class="header">
+                        Build fast, beautiful looking websites with <br> <span> COHERENT CSS</span>
+                    </h1>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, fugiat.
+                    </p>
+
+                </div>
+                <div class="btn-container">
+
+                    <p>
+                        <button id="btn1"><a href="docs.html">Get Started</a></button>
+                    </p>
+                    <p>
+
+                        <button id="btn2"><a href="#">Download Now</a></button>
+                    </p>
+                </div>
             </div>
         </main>
         <div class="assets">
-            <img src="images/bars.svg" alt="" id="bars">
-            <img src="images/dots-botom.svg" alt="" id="bottom-dots">
-            <img src="images/Rectangle 9.svg" alt="" id="bottom-triangle">
-            <img src="images/top dots.svg" alt="" id="top-dots">
-            <img src="images/Rectangle 2.svg" alt="" id="text-bg">
+            <img class="bars" src="images/bars.svg" alt="bars">
+            <!-- <img class="bottom-dots" src="images/dots-botom.svg" alt=""> -->
+            <img class="top-dots" src="images/top dots.svg" alt="">
+            <img class="bottom-rect" src="images/Rectangle 9.svg" alt="">
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 
 </html>

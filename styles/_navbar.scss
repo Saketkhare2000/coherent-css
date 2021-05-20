@@ -1,39 +1,104 @@
-.navbar {
-  height: 10vh;
-  background: $CH-Blue;
-  padding: 0rem 8rem;
-  .navLinks {
-    display: flex;
-    align-items: center;
-    // width: 50%;
-    height: 100%;
-    #logo {
-      padding: 0rem 1rem 0rem 0rem;
-      font-family: Gotham;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 24px;
-      line-height: 151%;
-      display: flex;
-      align-items: center;
-      text-transform: uppercase;
-      color: #f4ebe8;
-      list-style: none;
-      text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  font-family: "Gotham";
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0rem 5rem;
+  min-height: 10vh;
+  background-color: $CH-Blue;
+}
+.logo {
+  color: $CH-Text;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding-right: 1rem;
+}
+.nav-links {
+  display: flex;
+  /* background-color: red; */
+  width: auto;
+  justify-content: space-around;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links a {
+  color: $CH-Text;
+  text-decoration: none;
+  // font-weight: bold;
+  font-size: 1rem;
+  padding-right: 1rem;
+}
+.burger{
+    display: none;
+    /* No Burger for Desktop View  */
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 2px;
+    margin: 5px;
+    background-color: $CH-Text;
+    transition: all 0.3s ease-in;
+}
+@media screen and (max-width: 768px){
+    body{
+        overflow: hidden;
     }
-    .navLink {
-      padding: 0rem 2rem;
-      color: $CH-Text;
-      text-decoration: none;
-      list-style: none;
-      font-family: Gotham;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 18px;
-      line-height: 151%;
-      display: flex;
-      align-items: center;
-      color: #f4ebe8;
+    nav{
+      padding: 0rem;
+      justify-content: space-around;
     }
-  }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: $CH-Blue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 45%;
+        transform: translateX(100%);
+        /* Transform will move the nav links off the screen and we will write JS to call them when burger is clicked */
+        transition: transform 0.5s ease-in;
+        /* Nav-link class will follow this transition (Animation) */
+    }
+    .nav-links li{
+        opacity: 0;
+        /* We will write JS to increase its opacity and add delay to give it animation effect */
+    }
+    .burger{
+        display: block;
+    }
+}
+.nav-active{
+    transform: translateX(0%);
+    /* We will add this class when burger is clicked  */
+}
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
 }
