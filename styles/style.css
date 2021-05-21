@@ -170,7 +170,7 @@ main .header-text {
 main .header-text .header {
   width: 100%;
   font-size: 1.8rem;
-  font-family: 'Gotham';
+  font-family: 'Poppins',sans-serif;
   color: #190933;
   line-height: 151%;
   position: relative;
